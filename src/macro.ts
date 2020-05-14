@@ -3,8 +3,7 @@ import * as t from "@babel/types";
 import isEqual from "lodash/isEqual";
 import lodashUniq from "lodash/uniq";
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-export default createMacro(({ references, state, babel }) => {
+export default createMacro(({ references, state }) => {
   references.default.forEach(referencePath => {
     let callExpression: t.CallExpression;
 
